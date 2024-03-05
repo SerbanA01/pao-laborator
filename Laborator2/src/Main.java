@@ -15,6 +15,14 @@ Cum se formeaza secventa Fibonacci:
 import java.util.Scanner;
 
 public class Main {
+    public static int fibonacci(int n){
+        if(n == 0)
+            return 0;
+        if(n == 1)
+            return 1;
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+
     public static void main(String[] args) {
 
         int cerinta;
@@ -58,6 +66,11 @@ public class Main {
         }
         //3
         else{
+
+            Scanner fibonacciScanner = new Scanner(System.in);
+            System.out.println("Introduceti numarul N: ");
+            int n = fibonacciScanner.nextInt();
+            System.out.println(fibonacci(n));
 
         }
 
