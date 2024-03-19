@@ -14,7 +14,14 @@ public class Main {
         double latura1 = scanner.nextDouble();
         System.out.println("latura 2 a patrulaterului: ");
         double latura2 = scanner.nextDouble();
-        Patrulater patrulater = new Patrulater(latura1, latura2);
+
+        System.out.println("latura 3 a patrulaterului: ");
+        double latura3 = scanner.nextDouble();
+        System.out.println("latura 4 a patrulaterului: ");
+
+        double latura4 = scanner.nextDouble();
+        Patrulater patrulater = new Patrulater(latura1, latura2, latura3, latura4);
+
         System.out.println("perimetrul patrulaterului este: " + patrulater.CalculPerimetru());
 
 
