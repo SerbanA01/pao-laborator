@@ -26,7 +26,11 @@ public class Main {
         System.out.println("Lungimea sirului de caractere este: " + text.length());
         System.out.println("Textul contine doar litere mari si litere mici: " + text.matches("[a-zA-Z]+"));
         String[] words = text.split(" ");
-        System.out.println("Cuvintele de la mijloc sunt: " + words[words.length / 2]);
+        if (words.length % 2 == 0) {
+            System.out.println("Cuvintele de la mijloc sunt: " + words[words.length / 2 - 1] + " " + words[words.length / 2]);
+        } else {
+            System.out.println("Cuvintele de la mijloc sunt: " + words[words.length / 2]);
+        }
         System.out.println("Textul inversat este: " + new StringBuilder(text).reverse().toString());
 
 
